@@ -1,0 +1,17 @@
+{
+  "novedades": [
+    {
+      "titulo": "Actualizacion Blog",
+      "descripcion": "hola",
+      "enlace": "https://cuenti.com/"
+    },
+    {
+      "titulo": "Actualizacion Home",
+      "descripcion": "nueva artitectura para el home"
+    },
+    {
+      "titulo": "Actualizacion de nomian",
+      "descripcion": "nuevos articulos para todos lo emprendedores"
+    }
+  ]
+}
