@@ -2,7 +2,7 @@
   "novedades": [
     {
       "titulo": "Actualizacion Blog",
-      "descripcion": "hola",
+      "descripcion": "hola esta es otra actualizacion",
       "enlace": "https://cuenti.com/"
     },
     {
@@ -12,6 +12,16 @@
     {
       "titulo": "Actualizacion de nomian",
       "descripcion": "nuevos articulos para todos lo emprendedores"
+    },
+    {
+      "titulo": "Actualizacion de facturacion",
+      "descripcion": "nuevos articulos para todos lo emprendedores",
+      "enlace": "https://cuenti.com/"
+    },
+    {
+      "titulo": "Actualizacion de clientes",
+      "descripcion": "nuevos articulos para todos lo emprendedores, esta plan es superme hiper genial papus, creanlo bebeces... ay omeh",
+      "enlace": "https://cuenti.com/"
     }
   ]
 }

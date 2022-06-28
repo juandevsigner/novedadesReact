@@ -4,13 +4,19 @@ interface Provider {
   children: JSX.Element | JSX.Element[];
 }
 
-interface NovedadesFecth {
-  nombre: string;
+interface NovedadesAPI {
+  titulo: string;
   descripcion: string;
-  enlaces: string;
+  enlace?: string;
 }
 
-const StateContext = createContext();
+interface ValueProps {
+  modal: boolean;
+  setModal: React.Dispatch<React.SetStateAction<boolean>>;
+  novedades: NovedadesAPI[];
+}
+
+const StateContext: React.Context<ValueProps> = createContext({} as ValueProps);
 
 export const ContextProvider = ({ children }: Provider) => {
   const [modal, setModal] = useState(false);

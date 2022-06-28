@@ -1,5 +1,5 @@
 import { Boton, Modal } from "./components";
-import { ContextProvider, useStateContext } from "./context/ContexProvider";
+import { ContextProvider } from "./context/ContexProvider";
 
 function App() {
   return (

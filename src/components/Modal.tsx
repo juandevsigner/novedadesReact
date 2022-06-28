@@ -1,9 +1,8 @@
 import Novedad from "./Novedad";
-import { BiNews } from "react-icons/bi";
 import { useStateContext } from "../context/ContexProvider";
 
 const Modal = () => {
-  const { modal, setModal, novedades } = useStateContext();
+  const { modal, novedades } = useStateContext();
 
   return (
     <div
@@ -15,7 +14,7 @@ const Modal = () => {
         ¿Que hay de nuevo en Cuenti?
       </h2>
 
-      {novedades.map(({ titulo, descripcion, enlace }) => (
+      {novedades?.map(({ titulo, descripcion, enlace }) => (
         <Novedad
           key={titulo}
           titulo={titulo}

@@ -4,17 +4,16 @@ import { IoIosClose } from "react-icons/io";
 import { useStateContext } from "../context/ContexProvider";
 
 const Boton = () => {
-  const { modal, setModal, novedades } = useStateContext();
+  const { modal, setModal = () => {}, novedades } = useStateContext();
 
-  const countNovedades = novedades.length;
+  const countNovedades = novedades?.length;
 
   return (
     <>
-      <div
-        className={`${
+      {/*  ${
           countNovedades === 0 ? "hidden" : "fixed"
-        } fixed bottom-4 right-4`}
-      >
+        } */}
+      <div className="fixed bottom-4 right-4">
         <button
           className={`${
             modal ? "bg-red-600" : "bg-azul"
