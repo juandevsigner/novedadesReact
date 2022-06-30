@@ -25,7 +25,7 @@ export const ContextProvider = ({ children }: Provider) => {
     const obtenerNovedades = async () => {
       try {
         const url =
-          "http://my-json-server.typicode.com/juandevsigner/novedadesReact/novedades";
+          "https://my-json-server.typicode.com/juandevsigner/novedadesReact/novedades";
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
         setNovedades(resultado);

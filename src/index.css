@@ -1,7 +1,159 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*--------CLASES DEL BOTON--------*/
+.ocultarNv {
+  display: none;
+}
 
-body {
+.fijarNv {
+  position: fixed;
+}
+.fijarBlock {
+  display: block;
+}
+
+.btnContenedorNv {
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.btnNov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-delay: 100ms;
+  border-radius: 100%;
+  padding: 7px;
+  box-shadow: 0, 0, 5px, 2px rgba(130, 130, 130, 0.163);
+}
+
+.ColorAzulNv {
+  background-color: #003e8b;
+  border: none;
+}
+.ColorRedNv {
+  background-color: #df151cf3;
+  border: none;
+}
+.iconoNv {
+  color: white;
+  font-size: 36px;
+}
+.countNv {
+  position: fixed;
+  bottom: 42px;
+  right: 50px;
+  text-align: center;
+  background-color: #ffa003;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+
+/*--------------CLASES DEL MODAL-----------*/
+.ModDereNv {
+  right: 0;
+  transition: all;
+}
+.ModMenosDereNv {
+  right: -100%;
+  transition: all;
+}
+.ModNv {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  background-color: rgb(229 231 235);
+  overflow-y: scroll;
+  padding: 20px;
+  transition: all;
+  z-index: 99;
+}
+@media (min-width: 768px) {
+  .ModNv {
+    width: 300px;
+  }
+}
+.tituloModNv {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #003e8b;
+  font-family: "Montserrat", sans-serif;
+}
+.btnEnlaceModNv {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 25px;
+  background-color: #003e8b;
+  transition: all;
+  margin-bottom: 95px;
+  text-decoration: none;
+}
+.btnEnlaceModNv:hover {
+  background-color: #002149;
+}
+/*--------CLASES TARJETA NOVEDAD------*/
+.tarjetaNv {
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  position: relative;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.iconoNovStar {
+  position: absolute;
+  font-size: 30px;
+  left: 4px;
+  top: -4px;
+  color: #ffa003;
+}
+.tituloNov {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.parrafoNov {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+.separadorNov {
+  position: absolute;
+  width: 50%;
+  border-bottom-width: 1px;
+  bottom: 40px;
+  border-color: rgb(229 231 235);
+}
+.enlaceNov {
+  font-size: 14px;
+  background-color: #ffa003;
+  transition: all;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+  padding: 8px;
+  text-decoration: none;
+}
+.enlaceNov:hover {
+  background-color: #d74f00;
+}
+.iconoArrow {
+  font-size: 20px;
+}
+.iconoArrow {
+  display: flex;
+  justify-content: flex-end;
 }

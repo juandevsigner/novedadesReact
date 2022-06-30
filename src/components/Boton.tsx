@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { HiOutlineNewspaper } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import { useStateContext } from "../context/ContexProvider";
@@ -10,30 +9,23 @@ const Boton = () => {
 
   return (
     <>
-      {/*  ${
-          countNovedades === 0 ? "hidden" : "fixed"
-        } */}
-      <div className="fixed bottom-4 right-4">
+      <div
+        className={`${
+          countNovedades === 0 ? "ocultarNv" : "fijarNv"
+        } btnContenedorNv`}
+      >
         <button
-          className={`${
-            modal ? "bg-red-600" : "bg-azul"
-          } transition-colors delay-100  drop-shadow-lg rounded-full p-2`}
+          className={`${modal ? "ColorRedNv" : "ColorAzulNv"} btnNov`}
           type="button"
           onClick={() => setModal(!modal)}
         >
           {modal ? (
-            <IoIosClose className="text-4xl text-white" />
+            <IoIosClose className="iconoNv" />
           ) : (
-            <HiOutlineNewspaper className="text-4xl text-white" />
+            <HiOutlineNewspaper className="iconoNv" />
           )}
         </button>
-        <p
-          className={`${
-            modal && "hidden"
-          } fixed bottom-12 right-12 text-center bg-naranjado w-6 h-6 rounded-full font-bold`}
-        >
-          {countNovedades}
-        </p>
+        <p className={`${modal && "ocultarNv"} countNv`}>{countNovedades}</p>
       </div>
     </>
   );
